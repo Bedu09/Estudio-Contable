@@ -52,7 +52,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="#about">Quienes Somos</a></li>
+          <li><a class="nav-link scrollto" href="#about">Quiénes Somos</a></li>
           <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Porque elegirnos</a></li>
           <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
@@ -128,7 +128,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Quienes Somos</h2>
+          <h2>Quiénes Somos</h2>
         </div>
 
         <div class="row content">
@@ -291,7 +291,7 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <!--<div class="icon"><i class="bx bxl-dribbble"></i></div> -->
-              <h4><a href="">- Responsables Inscriptos:</a></h4>
+              <h4><a href="">Responsables Inscriptos</a></h4>
               <!--<h3>Altas como Responsable Inscripto en Autónomos, IVA y Ganancias</h3> -->
               <p>
                 <li>Altas como Responsable Inscripto en Autónomos, IVA y Ganancias.</li>
@@ -312,7 +312,7 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <!-- <div class="icon"><i class="bx bx-file"></i></div> -->
-              <h4><a href="">- Monotributistas:</a></h4>
+              <h4><a href="">Monotributistas</a></h4>
               <!--<h3>Altas y Bajas en Monotributo</h3> -->
               <p>
                 <li>Altas y Bajas en Monotributo.</li>
@@ -330,12 +330,12 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <!-- <div class="icon"><i class="bx bx-tachometer"></i></div> -->
-              <h4><a href=""> - Empresas Pymes</a></h4>
+              <h4><a href="">Empresas Pymes</a></h4>
               <!--<h3>.</h3> -->
               <p>
                 <li>Altas impositivas y trámites de Inscripción</li>
                 <li>Generación de Libro IVA Digital.</li>
-                <li>Declaración Jurada Mensual de IVA e Ingresos Brutos.</li><br>
+                <li>Declaración Jurada Mensual de IVA e Ingresos Brutos.</li>
                 <li>Declaración Jurada Anual de Ganancias, Bienes Personales, Participaciones Societarias.</li>
                 <li>Confección de Estados Contables.</li>
                 <li>Generación de Libros Contables.</li>
@@ -348,7 +348,7 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
               <!-- <div class="icon"><i class="bx bx-layer"></i></div> -->
-              <h4><a href="">- Laboral</a></h4>
+              <h4><a href="">Laboral</a></h4>
               <!-- <h3>Altas y Bajas de Empleados</h3> -->
               <p>
                 <li>Altas y Bajas de Empleados.</li>
@@ -420,7 +420,7 @@
             <p> Puedes enviarnos un mail a traves del formulario de contacto</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Escribinos</a>
+            <a class="cta-btn align-middle" href="#contact">Escribinos</a>
           </div>
         </div>
 
@@ -788,6 +788,36 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form id="form" action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="from_name">Nombre</label>
+                        <input type="text" name="from_name" class="form-control" id="from_name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" class="form-control" name="asunto" id="asunto" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" name="mensaje" id="mensaje" rows="10" required></textarea>
+                </div>
+                <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Su mensaje ha sido enviado, ¡gracias!</div>
+                </div>
+                <div class="text-center"><button type="submit" id="button">Enviar</button></div>
+            </form>
+        </div>
+        
+          <!--
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
@@ -814,7 +844,38 @@
               </div>
               <div class="text-center"><button type="submit">Enviar</button></div>
             </form>
-          </div>
+          </div> -->
+          
+          <!--
+          <form id="form">
+            <div class="field">
+              <label for="from_name">from_name</label>
+              <input type="text" name="from_name" id="from_name">
+            </div>
+            <div class="field">
+              <label for="nombre">nombre</label>
+              <input type="text" name="nombre" id="nombre">
+            </div>
+            <div class="field">
+              <label for="email">email</label>
+              <input type="text" name="email" id="email">
+            </div>
+            <div class="field">
+              <label for="asunto">asunto</label>
+              <input type="text" name="asunto" id="asunto">
+            </div>
+            <div class="field">
+              <label for="mensaje">mensaje</label>
+              <input type="text" name="mensaje" id="mensaje">
+            </div>
+            <div class="field">
+              <label for="reply_to">reply_to</label>
+              <input type="text" name="reply_to" id="reply_to">
+            </div>
+          
+            <input type="submit" id="button" value="Send Email" >
+          </form>
+          -->
 
         </div>
 
@@ -933,6 +994,36 @@
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
 
+  <!-- email server -->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('Nr5SR3X84WJ8X_UI2')
+</script>
+
+<script>
+  const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_5dna1jn';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
 
 </body>
 
