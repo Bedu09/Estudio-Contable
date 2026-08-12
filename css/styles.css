@@ -196,14 +196,14 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   align-items: center;
 }
 .logo-img {
-  height: 90px;
-  max-height: 95px;
+  height: 56px;
+  max-height: 58px;
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
 .logo-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .nav-menu {
   display: flex;
@@ -447,7 +447,7 @@ h3 { font-size: 1.5rem; font-weight: 600; }
 }
 .footer-logo {
   filter: brightness(0) invert(1);
-  height: 60px;
+  height: 50px;
   width: auto;
   margin-bottom: var(--sp-sm);
 }
