@@ -196,13 +196,14 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   align-items: center;
 }
 .logo-img {
-  height: 72px;
+  height: 90px;
+  max-height: 95px;
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
 .logo-img:hover {
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 .nav-menu {
   display: flex;
@@ -505,6 +506,9 @@ h3 { font-size: 1.5rem; font-weight: 600; }
 }
 
 @media (max-width: 768px) {
+  .logo-img {
+    height: 70px;
+  }
   .nav-menu {
     display: none; /* simple mobile setup */
     position: absolute;
